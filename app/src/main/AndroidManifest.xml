@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hms.referenceapp.voicechanger">
+    <uses-permission android:name="android.permission.VIBRATE" /> <!-- Microphone -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" /> <!-- Write into storage -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- Read from storage -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- Connect to Internet -->
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- Obtain the network status -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- Obtain the changed network connectivity state -->
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" /> <!-- Manage files. Declare this permission only when the version of Android in use is 11 or later. -->
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.VoiceChanger">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

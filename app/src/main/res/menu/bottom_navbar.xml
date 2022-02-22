@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/record_icon"
+        android:icon="@drawable/microphone"
+        android:contentDescription="Record"
+        android:title="Record"/>
+
+    <item
+        android:id="@+id/add_icon"
+        android:icon="@drawable/ic_add2"
+        android:contentDescription="Add Audio"
+        android:title="Add Audio"/>
+
+    <item
+        android:id="@+id/saved_icon"
+        android:icon="@drawable/ic_saved"
+        android:contentDescription="Saved"
+        android:title="Library"/>
+
+</menu>

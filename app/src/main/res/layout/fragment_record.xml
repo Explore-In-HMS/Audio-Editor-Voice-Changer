@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Record">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Chronometer
+            android:id="@+id/cmeter"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="36sp"
+            android:layout_marginBottom="20dp"/>
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/record_animation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="60dp"
+            app:lottie_rawRes="@raw/anim"
+            app:lottie_loop="true"
+            app:lottie_speed="1.5"
+            android:layout_gravity="center"/>
+
+        <LinearLayout
+            android:id="@+id/recorder_buttons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/play"
+                android:layout_margin="20dp"
+                android:background="@drawable/play"
+                android:layout_width="24dp"
+                android:layout_height="24dp"/>
+
+            <Button
+                android:id="@+id/reset"
+                android:layout_margin="20dp"
+                android:layout_width="24dp"
+                android:background="@drawable/trash"
+                android:layout_height="24dp"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/send"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/check"/>
+    </LinearLayout>
+
+
+
+</FrameLayout>
